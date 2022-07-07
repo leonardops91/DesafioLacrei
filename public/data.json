@@ -1,0 +1,12 @@
+{
+  "colors": {
+    "purple": "purple",
+    "red": "red",
+    "green": "green"
+  },
+  "timers": {
+    "timer1": 500,
+    "timer2": 1000,
+    "timer3": 1500
+  }
+}

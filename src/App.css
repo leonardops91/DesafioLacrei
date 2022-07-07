@@ -1,0 +1,45 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.container div {
+  width: 90%;
+  height: 60px;
+  border: solid 1px grey;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container div span{
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: aqua;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .container div span{
+    animation: loader infinite .5s linear alternate-reverse;
+  }
+}
+
+@keyframes loader {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
